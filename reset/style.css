@@ -1,0 +1,49 @@
+body, html {
+  margin: 0; padding: 0; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  overflow: auto;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+button {
+  transition: top 0.3s ease, left 0.3s ease;
+}
+
+.item {
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.word {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+img {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
